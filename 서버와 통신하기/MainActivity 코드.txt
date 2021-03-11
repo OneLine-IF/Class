@@ -1,0 +1,20 @@
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        EditText titleEditText = findViewById(R.id.title_editText);
+        EditText contentEditText = findViewById(R.id.content_edittext);
+        EditText idEditText =  findViewById(R.id.id_edittext);
+        Button postButton =  findViewById(R.id.post_button);
+        Button updateButton = findViewById(R.id.update_button);
+        Button deleteButton = findViewById(R.id.delete_button);
+        Button getButton = findViewById(R.id.get_button);
+        RecyclerView recyclerView = findViewById(R.id.recyclerview);
+
+        RecyclerAdapter recyclerAdapter = new RecyclerAdapter();
+        recyclerView.setAdapter(recyclerAdapter);
+    }
+}
