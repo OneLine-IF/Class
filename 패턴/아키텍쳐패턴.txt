@@ -91,5 +91,5 @@ ViewModel의 역할은 입력에 해당하는 로직을 처리해서 View에 데
 MVVM의 장점은 View와 Model 사이의 의존성이 없고 View와 ViewModel 사이의 의존성도 없습니다.
 그리고 중복되는 코드를 모듈화해서 개발할 수 있다는 장점이 있습니다.(ViewModel은 View와 1:N가능)
 
-DataBinding 강의에서 MVVM을 예시와 함께 알아보도록 합시다.
+MVVM사용법은 MVVM 강의에서 함께 알아보도록 합시다.
 
