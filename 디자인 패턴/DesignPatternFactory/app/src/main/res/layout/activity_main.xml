@@ -12,24 +12,22 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <Button
-            android:id="@+id/db_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="db조회"
-            app:layout_constraintBottom_toTopOf="@+id/name_edittext"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"></Button>
-
         <TextView
-            android:id="@+id/result_text"
+            android:id="@+id/cat_result_textview"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="동물리스트\n"
-            app:layout_constraintBottom_toTopOf="@+id/db_button"
+            app:layout_constraintBottom_toTopOf="@+id/dog_result_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/dog_result_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/name_edittext"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></TextView>
+            app:layout_constraintTop_toBottomOf="@+id/cat_result_textview"></TextView>
 
         <EditText
             android:hint="이름"

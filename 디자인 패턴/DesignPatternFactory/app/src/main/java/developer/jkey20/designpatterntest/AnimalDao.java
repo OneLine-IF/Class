@@ -5,6 +5,7 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Dao
@@ -18,4 +19,7 @@ public interface AnimalDao {
 
     @Delete
     void delete(Animal animal);
+
+    @Query("DELETE FROM ANIMAL")
+    void deleteAll();
 }
