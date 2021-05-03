@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/cat_result_textview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/dog_result_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/dog_result_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/db_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cat_result_textview"></TextView>
+
+        <Button
+            android:id="@+id/db_add_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="데이터베이스에 추가"
+            app:layout_constraintBottom_toTopOf="@+id/add_button"></Button>
+        <Button
+
+            android:id="@+id/db_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="데이터베이스 조회"
+            app:layout_constraintBottom_toTopOf="@+id/name_edittext"></Button>
+
+        <EditText
+            android:id="@+id/name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            app:layout_constraintBottom_toTopOf="@+id/birth_edittext"></EditText>
+
+        <EditText
+            android:id="@+id/birth_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="생일"
+            app:layout_constraintBottom_toTopOf="@+id/species_edittext"></EditText>
+
+        <EditText
+            android:id="@+id/species_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="종"
+            app:layout_constraintBottom_toTopOf="@+id/db_add_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></EditText>
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="동물원에 추가하기"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
